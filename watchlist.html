@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TV Shows-Movie Explorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="https://www.freeiconspng.com/uploads/movie-icon-1.png" type="image/x-icon">
+</head>
+
+<body class="bg-black text-white font-sans">
+
+
+
+    <section class="bg-black text-white py-8 px-4">
+        <div class="max-w-7xl mx-auto">
+            <!-- Watchlist Header -->
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+                <h2 class="text-2xl font-bold">Watchlist</h2>
+                <div class="flex gap-3 mt-3 md:mt-0">
+                    <a href="" class="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700">Home</a>
+                    <button class="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700">All</button>
+                    <a href="#movies" class="px-4 py-2 bg-gray-800 rounded-lg hover:bg-gray-700">Movies</a>
+                    <a href="#shows.html" class="px-4 py-2 bg-gray-800 rounded-lg hover:bg-gray-700">TV Shows</a>
+                </div>
+            </div>
+
+
+            <section id="movies" class="bg-black text-white py-8 px-4">
+                <div class="max-w-7xl mx-auto">
+                    <h2 class="text-2xl font-bold mb-6">Movies</h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Left: Video Panel -->
+                        <div
+                            class="col-span-1 bg-gray-900 rounded-lg p-4 min-h-[400px] flex items-center justify-center">
+                            <!-- Video display area controlled by radio buttons -->
+                            <div class="w-full">
+                                <!-- Game of Thrones -->
+                                <input type="radio" name="video" id="vid1" class="hidden peer/vid1" checked>
+                                <div class="peer-checked/vid1:block hidden">
+                                    <iframe width="100%" height="250"
+                                        src="https://www.youtube.com/embed/gcTkNV5Vg1E?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0"
+                                        frameborder="0" allowfullscreen class="rounded-lg"></iframe>
+                                    <div class="bg-gray-900 bg-opacity-90 p-4 rounded-lg mt-2">
+                                        <h3 class="text-lg font-bold">Game of Thrones</h3>
+                                        <p class="text-green-400 text-sm mb-2">#1 Worldwide</p>
+                                        <button
+                                            class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-full font-semibold">▶
+                                            Play</button>
+                                        <p class="text-sm text-gray-300 mb-1">2011 • A</p>
+                                        <p class="text-sm">In the Seven Kingdoms of Westeros, noble families clash for
+                                            the Iron Throne while ancient forces rise in the far North.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Avatar -->
+                                <input type="radio" name="video" id="vid2" class="hidden peer/vid2">
+                                <div class="peer-checked/vid2:block hidden">
+                                    <iframe width="100%" height="250"
+                                        src="https://www.youtube.com/embed/5PSNL1qE6VY?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0"
+                                        frameborder="0" allowfullscreen class="rounded-lg"></iframe>
+                                    <div class="bg-gray-900 bg-opacity-90 p-4 rounded-lg mt-2">
+                                        <h3 class="text-lg font-bold">Avatar</h3>
+                                        <p class="text-green-400 text-sm mb-2">#1 Worldwide</p>
+                                        <button
+                                            class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-full font-semibold">▶
+                                            Play</button>
+                                        <p class="text-sm text-gray-300 mb-1">2009 • A</p>
+                                        <p class="text-sm">A paraplegic Marine is dispatched to the moon Pandora on a
+                                            unique mission and becomes torn between following orders and protecting the
+                                            world he feels is his home.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Inception -->
+                                <input type="radio" name="video" id="vid3" class="hidden peer/vid3">
+                                <div class="peer-checked/vid3:block hidden">
+                                    <iframe width="100%" height="250"
+                                        src="https://www.youtube.com/embed/YoHD9XEInc0?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0"
+                                        frameborder="0" allowfullscreen class="rounded-lg"></iframe>
+                                    <div class="bg-gray-900 bg-opacity-90 p-4 rounded-lg mt-2">
+                                        <h3 class="text-lg font-bold">Inception</h3>
+                                        <p class="text-green-400 text-sm mb-2">#1 Worldwide</p>
+                                        <button
+                                            class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-full font-semibold">▶
+                                            Play</button>
+                                        <p class="text-sm text-gray-300 mb-1">2010 • A</p>
+                                        <p class="text-sm">A thief who enters the dreams of others to steal secrets is
+                                            offered a chance at redemption if he can perform the impossible — inception.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- The Conjuring -->
+                                <input type="radio" name="video" id="vid4" class="hidden peer/vid4">
+                                <div class="peer-checked/vid4:block hidden">
+                                    <iframe width="100%" height="250"
+                                        src="https://www.youtube.com/embed/bMgfsdYoEEo?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0"
+                                        frameborder="0" allowfullscreen class="rounded-lg"></iframe>
+                                    <div class="bg-gray-900 bg-opacity-90 p-4 rounded-lg mt-2">
+                                        <h3 class="text-lg font-bold">The Conjuring</h3>
+                                        <p class="text-green-400 text-sm mb-2">#1 Worldwide</p>
+                                        <button
+                                            class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-full font-semibold">▶
+                                            Play</button>
+                                        <p class="text-sm text-gray-300 mb-1">2013 • A</p>
+                                        <p class="text-sm">Paranormal investigators Ed and Lorraine Warren work to help
+                                            a family terrorized by a dark presence in their farmhouse.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Interstellar -->
+                                <input type="radio" name="video" id="vid5" class="hidden peer/vid5">
+                                <div class="peer-checked/vid5:block hidden">
+                                    <iframe width="100%" height="250"
+                                        src="https://www.youtube.com/embed/60h6lpnSgck?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0"
+                                        frameborder="0" allowfullscreen class="rounded-lg"></iframe>
+                                    <div class="bg-gray-900 bg-opacity-90 p-4 rounded-lg mt-2">
+                                        <h3 class="text-lg font-bold">Interstellar</h3>
+                                        <p class="text-green-400 text-sm mb-2">#1 Worldwide</p>
+                                        <button
+                                            class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-full font-semibold">▶
+                                            Play</button>
+                                        <p class="text-sm text-gray-300 mb-1">2014 • A</p>
+                                        <p class="text-sm">A group of explorers travel through a wormhole in space in an
+                                            attempt to ensure humanity's survival.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Predator: Badlands -->
+                                <input type="radio" name="video" id="vid6" class="hidden peer/vid6">
+                                <div class="peer-checked/vid6:block hidden">
+                                    <iframe width="100%" height="250"
+                                        src="https://www.youtube.com/embed/43R9l7EkJwE?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0"
+                                        frameborder="0" allowfullscreen class="rounded-lg"></iframe>
+                                    <div class="bg-gray-900 bg-opacity-90 p-4 rounded-lg mt-2">
+                                        <h3 class="text-lg font-bold">Predator: Badlands</h3>
+                                        <p class="text-green-400 text-sm mb-2">#1 Worldwide</p>
+                                        <button
+                                            class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-full font-semibold">▶
+                                            Play</button>
+                                        <p class="text-sm text-gray-300 mb-1">2023 • A</p>
+                                        <p class="text-sm">Hunters become the hunted as an elite team faces a deadly
+                                            extraterrestrial predator.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right: Cards Grid -->
+                        <div class="col-span-2 grid grid-cols-2 sm:grid-cols-3 gap-4">
+                            <label for="vid1" class="cursor-pointer group">
+                                <img src="https://wallpapers.com/images/featured/game-of-thrones-92acb30ilmkjbmu9.jpg"
+                                    alt="Game of Thrones"
+                                    class="w-full h-40 object-cover rounded-lg group-hover:scale-105 transition-transform">
+                            </label>
+                            <label for="vid2" class="cursor-pointer group">
+                                <img src="https://m.media-amazon.com/images/S/pv-target-images/16627900db04b76fae3b64266ca161511422059cd24062fb5d900971003a0b70._SX1080_FMjpg_.jpg"
+                                    alt="Avatar"
+                                    class="w-full h-40 object-cover rounded-lg group-hover:scale-105 transition-transform">
+                            </label>
+                            <label for="vid3" class="cursor-pointer group">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg"
+                                    alt="Inception"
+                                    class="w-full h-40 object-cover rounded-lg group-hover:scale-105 transition-transform">
+                            </label>
+                            <label for="vid4" class="cursor-pointer group">
+                                <img src="https://i.ytimg.com/vi/FSAz556s0fM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBPhLsWn3QKxM_FDSUeTZL8OYDzEw"
+                                    alt="The Conjuring"
+                                    class="w-full h-40 object-cover rounded-lg group-hover:scale-105 transition-transform">
+                            </label>
+                            <label for="vid5" class="cursor-pointer group">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg"
+                                    alt="Interstellar"
+                                    class="w-full h-40 object-cover rounded-lg group-hover:scale-105 transition-transform">
+                            </label>
+                            <label for="vid6" class="cursor-pointer group">
+                                <img src="https://i.ytimg.com/vi/43R9l7EkJwE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCCyH58d5eWLBfbNw1-_Cx0-apwGA"
+                                    alt="Predator: Badlands"
+                                    class="w-full h-40 object-cover rounded-lg group-hover:scale-105 transition-transform">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <section id="shows.html" class="bg-black text-white py-8 px-4">
+                <div class="max-w-7xl mx-auto">
+                    <!-- Section Header -->
+                    <h2 class="text-2xl font-bold mb-6">TV SHOWS</h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Left: Video Panel -->
+                        <div class="col-span-1 bg-gray-900 rounded-lg p-4 min-h-[400px]">
+                            <!-- Video Containers (only one visible at a time) -->
+
+                            <!-- Stranger Things -->
+                            <input type="radio" name="tvshow" id="tv1" class="hidden peer/tv1" checked>
+                            <div class="peer-checked/tv1:block hidden">
+                                <iframe width="100%" height="250"
+                                    src="https://www.youtube.com/embed/iKZyYdwS3Wg?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0"
+                                    frameborder="0" allowfullscreen class="rounded-lg"></iframe>
+                                <div class="bg-gray-900 bg-opacity-90 p-4 rounded-lg mt-2">
+                                    <h3 class="text-lg font-bold">Stranger Things</h3>
+                                    <p class="text-green-400 text-sm mb-2">#1 Worldwide</p>
+                                    <button
+                                        class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-full font-semibold">▶
+                                        Play</button>
+                                    <p class="text-sm text-gray-300 mb-1">2023 • A</p>
+                                    <p class="text-sm">In the Seven Kingdoms of Westeros, noble families clash for the
+                                        Iron Throne while ancient forces rise in the far North.</p>
+                                </div>
+                            </div>
+
+                            <!-- Ren -->
+                            <input type="radio" name="tvshow" id="tv2" class="hidden peer/tv2">
+                            <div class="peer-checked/tv2:block hidden">
+                                <iframe width="100%" height="250"
+                                    src="https://www.youtube.com/embed/DwXrfN_-GuE?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0"
+                                    frameborder="0" allowfullscreen class="rounded-lg"></iframe>
+                                <div class="bg-gray-900 bg-opacity-90 p-4 rounded-lg mt-2">
+                                    <h3 class="text-lg font-bold">Ren</h3>
+                                    <p class="text-green-400 text-sm mb-2">#1 Worldwide</p>
+                                    <button
+                                        class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-full font-semibold">▶
+                                        Play</button>
+                                    <p class="text-sm text-gray-300 mb-1">2011 • A</p>
+                                    <p class="text-sm">In the Seven Kingdoms of Westeros, noble families clash for the
+                                        Iron Throne while ancient forces rise in the far North.</p>
+                                </div>
+                            </div>
+
+                            <!-- Wednesday -->
+                            <input type="radio" name="tvshow" id="tv3" class="hidden peer/tv3">
+                            <div class="peer-checked/tv3:block hidden">
+                                <iframe width="100%" height="250"
+                                    src="https://www.youtube.com/embed/03u4xyj0TH4?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0"
+                                    frameborder="0" allowfullscreen class="rounded-lg"></iframe>
+                                <div class="bg-gray-900 bg-opacity-90 p-4 rounded-lg mt-2">
+                                    <h3 class="text-lg font-bold">Wednesday</h3>
+                                    <p class="text-green-400 text-sm mb-2">#1 Worldwide</p>
+                                    <button
+                                        class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-full font-semibold">▶
+                                        Play</button>
+                                    <p class="text-sm text-gray-300 mb-1">2025 • A</p>
+                                    <p class="text-sm">In the Seven Kingdoms of Westeros, noble families clash for the
+                                        Iron Throne while ancient forces rise in the far North.</p>
+                                </div>
+                            </div>
+
+                            <!-- Now You See Me -->
+                            <input type="radio" name="tvshow" id="tv4" class="hidden peer/tv4">
+                            <div class="peer-checked/tv4:block hidden">
+                                <iframe width="100%" height="250"
+                                    src="https://www.youtube.com/embed/-E3lMRx7HRQ?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0"
+                                    frameborder="0" allowfullscreen class="rounded-lg"></iframe>
+                                <div class="bg-gray-900 bg-opacity-90 p-4 rounded-lg mt-2">
+                                    <h3 class="text-lg font-bold">Now You See Me: Now You Don’t</h3>
+                                    <p class="text-green-400 text-sm mb-2">#1 Worldwide</p>
+                                    <button
+                                        class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-full font-semibold">▶
+                                        Play</button>
+                                    <p class="text-sm text-gray-300 mb-1">2025 • A</p>
+                                    <p class="text-sm">In the Seven Kingdoms of Westeros, noble families clash for the
+                                        Iron Throne while ancient forces rise in the far North.</p>
+                                </div>
+                            </div>
+
+                            <!-- Game of Thrones -->
+                            <input type="radio" name="tvshow" id="tv5" class="hidden peer/tv5">
+                            <div class="peer-checked/tv5:block hidden">
+                                <iframe width="100%" height="250"
+                                    src="https://www.youtube.com/embed/YoHD9XEInc0?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0"
+                                    frameborder="0" allowfullscreen class="rounded-lg"></iframe>
+                                <div class="bg-gray-900 bg-opacity-90 p-4 rounded-lg mt-2">
+                                    <h3 class="text-lg font-bold">Game of Thrones</h3>
+                                    <p class="text-green-400 text-sm mb-2">#1 Worldwide</p>
+                                    <button
+                                        class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-full font-semibold">▶
+                                        Play</button>
+                                    <p class="text-sm text-gray-300 mb-1">2011 • A</p>
+                                    <p class="text-sm">In the Seven Kingdoms of Westeros, noble families clash for the
+                                        Iron Throne while ancient forces rise in the far North.</p>
+                                </div>
+                            </div>
+
+                            <!-- Crown Lake -->
+                            <input type="radio" name="tvshow" id="tv6" class="hidden peer/tv6">
+                            <div class="peer-checked/tv6:block hidden">
+                                <iframe width="100%" height="250"
+                                    src="https://www.youtube.com/embed/iyZPZilR150?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0"
+                                    frameborder="0" allowfullscreen class="rounded-lg"></iframe>
+                                <div class="bg-gray-900 bg-opacity-90 p-4 rounded-lg mt-2">
+                                    <h3 class="text-lg font-bold">CROWN LAKE</h3>
+                                    <p class="text-green-400 text-sm mb-2">#1 Worldwide</p>
+                                    <button
+                                        class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-full font-semibold">▶
+                                        Play</button>
+                                    <p class="text-sm text-gray-300 mb-1">2025 • A</p>
+                                    <p class="text-sm">In the Seven Kingdoms of Westeros, noble families clash for the
+                                        Iron Throne while ancient forces rise in the far North.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right: Cards Grid -->
+                        <div class="col-span-2 grid grid-cols-2 sm:grid-cols-3 gap-4">
+                            <label for="tv1" class="cursor-pointer group">
+                                <img src="https://i.ytimg.com/vi/hoCc74IBf4s/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCIHrHwFZWppwUs3kyKtT7_WysUYw"
+                                    alt="Stranger Things"
+                                    class="w-full h-40 object-cover rounded-lg group-hover:scale-105 transition-transform" />
+                            </label>
+                            <label for="tv2" class="cursor-pointer group">
+                                <img src="https://i.ytimg.com/vi/N5d16cUKqu0/maxresdefault.jpg" alt="Ren"
+                                    class="w-full h-40 object-cover rounded-lg group-hover:scale-105 transition-transform" />
+                            </label>
+                            <label for="tv3" class="cursor-pointer group">
+                                <img src="https://i.ytimg.com/vi/Di310WS8zLk/maxresdefault.jpg" alt="Wednesday"
+                                    class="w-full h-40 object-cover rounded-lg group-hover:scale-105 transition-transform" />
+                            </label>
+                            <label for="tv4" class="cursor-pointer group">
+                                <img src="https://i.ytimg.com/vi/-E3lMRx7HRQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDKo27LZhDpKWZUvOYwf3hBowTcIA"
+                                    alt="Now You See Me"
+                                    class="w-full h-40 object-cover rounded-lg group-hover:scale-105 transition-transform" />
+                            </label>
+                            <label for="tv5" class="cursor-pointer group">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg"
+                                    alt="Game of Thrones"
+                                    class="w-full h-40 object-cover rounded-lg group-hover:scale-105 transition-transform" />
+                            </label>
+                            <label for="tv6" class="cursor-pointer group">
+                                <img src="https://i.ytimg.com/vi/iyZPZilR150/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAXWZuz3MYagkz3r0SVl5JOXWLlBg"
+                                    alt="Crown Lake"
+                                    class="w-full h-40 object-cover rounded-lg group-hover:scale-105 transition-transform" />
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+            <footer class="bg-gray-900 text-gray-300 py-8 px-6">
+                <div
+                    class="container mx-auto flex flex-col md:flex-row justify-between gap-12 px-6 md:px-0 text-center md:text-left">
+
+                    <!-- About Us -->
+                    <div class="md:w-1/4">
+                        <h3 class="text-lg font-semibold text-white mb-2">About Us</h3>
+                        <div class="w-14 h-1 bg-white mb-4 mx-auto md:mx-0"></div>
+                        <p class="text-sm text-justify">
+                            Movie Explorer is your go-to hub for discovering the latest and greatest movies. Stay
+                            updated with
+                            trending
+                            films and upcoming blockbusters!
+                        </p>
+                        <div class="flex flex-row justify-between my-6">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="md:w-1/4">
+                        <h3 class="text-lg font-semibold text-white mb-2">Quick Links</h3>
+                        <div class="w-14 h-1 bg-white mb-4 mx-auto md:mx-0"></div>
+                        <ul class="text-sm space-y-1">
+                            <li><a href="#" class="hover:underline">Home</a></li>
+                            <li><a href="#" class="hover:underline">Trending</a></li>
+                            <li><a href="#" class="hover:underline">Upcoming</a></li>
+                            <li><a href="#" class="hover:underline">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Us -->
+                    <div class="md:w-1/4">
+                        <h3 class="text-lg font-semibold text-white mb-2">Contact Us</h3>
+                        <div class="w-14 h-1 bg-white mb-4 mx-auto md:mx-0"></div>
+                        <p class="text-sm">Email: explorer@gmail.com</p>
+                        <p class="text-sm">Phone: +91 98765 40000</p>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="md:w-1/4">
+                        <h3 class="text-lg font-semibold text-white mb-2">Newsletter</h3>
+                        <div class="w-14 h-1 bg-white mb-4 mx-auto md:mx-0"></div>
+                        <p class="text-sm mb-2">Get the latest movie updates in your inbox.</p>
+                        <input type="email" placeholder="Your email"
+                            class="w-full p-2 rounded bg-gray-800 text-white mb-2">
+                        <button class="w-full bg-blue-500 hover:bg-red-600 text-white py-2 rounded">
+                            Subscribe
+                        </button>
+                    </div>
+
+                </div>
+
+
+        </div>
+
+        <!-- Bottom Line -->
+        <div class="text-center text-sm text-gray-500 mt-8 border-t border-gray-700 pt-4">
+            © 2025 Movie Explorer | Designed using Tailwind CSS !!
+        </div>
+        </footer>
+
+</body>
+
+</html>

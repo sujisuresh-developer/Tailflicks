@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movies-TailFlicks</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="https://www.freeiconspng.com/uploads/movie-icon-1.png" type="image/x-icon">
+</head>
+
+<body class="bg-black text-white font-sans">
+
+
+ <header class="w-full fixed left-0 top-0 bg-black z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <a href="index.html"><h1 class="text-xl font-bold text-blue-400">🎬 TailFlicks</h1></a>
+    <input type="checkbox" id="menu-toggle" class="peer hidden" />
+    <label for="menu-toggle" class="cursor-pointer md:hidden block">
+      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" 
+           stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <path d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </label>
+    <nav
+      class="flex flex-col md:flex-row md:space-x-6 text-sm md:text-base absolute top-full left-0 w-full bg-black bg-opacity-90 md:static md:w-auto md:bg-transparent
+             max-h-0 overflow-hidden peer-checked:max-h-96 transition-all duration-300 md:max-h-full"
+    >
+      <a href="index.html" class="block px-6 py-3 hover:text-blue-400 font-semibold md:font-normal md:inline md:px-0 md:py-0 hover:text-blue-400">Home</a>
+      <a href="movies.html" class="block px-6 py-3 text-blue-400 md:inline md:px-0 md:py-0">Movies</a>
+      <a href="tvshows.html" class="block px-6 py-3 hover:text-blue-400 md:inline md:px-0 md:py-0">TV Shows</a>
+      <a href="watchlist.html" class="block px-6 py-3 hover:text-blue-400 md:inline md:px-0 md:py-0">Watchlist</a>
+    </nav>
+
+  </div>
+</header>
+
+  <!-- Hero Section -->
+  <section class="relative w-full h-96 md:h-96 lg:h-screen">
+    <!-- Background Image -->
+    <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2024/12/a-coolie-promo-image-featuring-rajinikanth-with-a-clenched-fist.jpg" alt="Coolie"
+      class="w-full h-full object-cover object-top" />
+
+    <div class="absolute top-0 bottom-0 left-0 right-0 flex items-center px-6 md:px-20">
+      <div class="max-w-xs sm:max-w-md md:max-w-2xl">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Coolie</h1>
+        <p class="text-lg md:text-xl mb-6">Delves into a man's relentless quest for vengeance since youth, driven by righting past wrongs, shaping his very existence. Viewers experience the complexities of his tumultuous vendetta journey.</p>
+        <button class="bg-blue-700 hover:bg-blue-800 px-6 py-3 rounded-lg text-lg">▶ Add to Watchlist</button>
+                <button class="bg-white hover:bg-blue-200 px-6 py-3 rounded-lg text-md text-black font-medium">Watch Now</button>
+
+      </div>
+    </div>
+  </section>
+  <!-- Top-rated -->
+  <section class="mb-8">
+    <div class="bg-black text-white py-8 px-4">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-2xl font-bold">Top-rated Movies</h2>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+      <!-- Thudarum -->
+      <div class="relative group cursor-pointer">
+        <img src="https://media.assettype.com/outlookindia/2025-04-26/jtuuc83q/MV5BMzJiOWE0NmEtMDFkNC00MGI3LWI1NjItZmQ0ZjAyNzRiMTU2XkEyXkFqcGc.V1FMjpgUY2048.jpeg?w=801&auto=format%2Ccompress&fit=max&format=webp&dpr=1.0"
+          class="w-full object-cover rounded-lg h-40 transition-transform duration-300 group-hover:scale-105"
+          alt=" Poster" />
+        <div
+          class="absolute top-0 left-0 w-full bg-gray-900 text-white p-4 rounded-lg scale-95 group-hover:scale-105 opacity-0 group-hover:opacity-100 z-10 transition-opacity duration-300">
+          <img src="https://media.assettype.com/outlookindia/2025-04-26/jtuuc83q/MV5BMzJiOWE0NmEtMDFkNC00MGI3LWI1NjItZmQ0ZjAyNzRiMTU2XkEyXkFqcGc.V1FMjpgUY2048.jpeg?w=801&auto=format%2Ccompress&fit=max&format=webp&dpr=1.0"
+            class="rounded w-full h-40 mb-2 object-cover" alt="Thudarum" />
+          <h3 class="text-lg font-bold">Thudarum</h3>
+          <p class="text-green-400 text-sm mb-2">#1 in India</p>
+          <button class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-50 font-semibold">▶ Add to
+            Watchlist</button>
+             <button class="bg-white text-black px-4 py-2 rounded-lg text-sm  ml-1 mb-2 w-50 font-semibold">Watch Now</button>
+          <p class="text-sm text-gray-300 mb-1">2025 • U/A</p>
+          <p class="text-sm">In the quiet hill town of Ranni, humble taxi driver Shanmughan treasures one thing above all - his aging Ambassador car. When fate puts him to the test, he must prove just how far he'll go for what he holds dear.</p>
+        </div>
+      </div>
+
+      <!-- Parasite -->
+      <div class="relative group cursor-pointer">
+        <img src="https://www.vintagemovieposters.co.uk/wp-content/uploads/2020/03/IMG_3746-scaled.jpeg"
+          class="w-full object-cover rounded-lg h-40 transition-transform duration-300 group-hover:scale-105"
+          alt=" Poster" />
+        <div
+          class="absolute top-0 left-0 w-full bg-gray-900 text-white p-4 rounded-lg scale-95 group-hover:scale-105 opacity-0 group-hover:opacity-100 z-10 transition-opacity duration-300">
+          <img src="https://www.vintagemovieposters.co.uk/wp-content/uploads/2020/03/IMG_3746-scaled.jpeg"
+            class="rounded w-full h-40 mb-2 object-cover" alt="Parasite Poster" />
+          <h3 class="text-lg font-bold">Parasite</h3>
+          <p class="text-green-400 text-sm mb-2">#1 Worldwide</p>
+          <button class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-50 font-semibold">▶ Add to
+            Watchlist</button>
+                         <button class="bg-white text-black px-4 py-2 rounded-lg text-sm ml-1 mb-2 w-50 font-semibold">Watch Now</button>
+
+          <p class="text-sm text-gray-300 mb-1">2019 • A</p>
+          <p class="text-sm">Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.</p>
+        </div>
+      </div>
+
+      <!-- Interstellar -->
+      <div class="relative group cursor-pointer">
+        <img src="https://wallpapercave.com/wp/wp1817975.jpg"
+          class="w-full object-cover rounded-lg h-40 transition-transform duration-300 group-hover:scale-105"
+          alt=" Poster" />
+        <div
+          class="absolute top-0 left-0 w-full bg-gray-900 text-white p-4 rounded-lg scale-95 group-hover:scale-105 opacity-0 group-hover:opacity-100 z-10 transition-opacity duration-300">
+          <img src="https://wallpapercave.com/wp/wp1817975.jpg"
+            class="rounded w-full h-40 mb-2 object-cover" alt="Interstellar" />
+          <h3 class="text-lg font-bold">Interstellar</h3>
+          <p class="text-green-400 text-sm mb-2">#3 Worldwide</p>
+          <button class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-50 font-semibold">▶ Add to Watchlist</button>
+                                   <button class="bg-white text-black px-4 py-2 rounded-lg text-sm ml-1 mb-2 w-50 font-semibold">Watch Now</button>
+
+          <p class="text-sm text-gray-300 mb-1">2014 • U/A </p>
+          <p class="text-sm">When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.</p>
+        </div>
+      </div>
+
+      <!-- Fightclub -->
+      <div class="relative group cursor-pointer">
+        <img src="https://www.themoviedb.org/t/p/original/obVTG7QMbQ7gV3oZAJuFjKBhsGk.jpg"
+          class="w-full object-cover rounded-lg h-40 transition-transform duration-300 group-hover:scale-105"
+          alt="Fightclub Poster" />
+        <div
+          class="absolute top-0 left-0 w-full bg-gray-900 text-white p-4 rounded-lg scale-95 group-hover:scale-105 opacity-0 group-hover:opacity-100 z-10 transition-opacity duration-300">
+          <img src="https://www.themoviedb.org/t/p/original/obVTG7QMbQ7gV3oZAJuFjKBhsGk.jpg"
+            class="rounded w-full h-40 mb-2 object-cover" alt=" Poster" />
+          <h3 class="text-lg font-bold">Fight Club</h3>
+          <p class="text-green-400 text-sm mb-2">#5 Worldwide</p>
+          <button class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-50 font-semibold">▶ Add to
+            Watchlist</button>
+                                     <button class="bg-white text-black px-4 py-2 rounded-lg text-sm ml-1 mb-2 w-50 font-semibold">Watch Now</button>
+
+          <p class="text-sm text-gray-300 mb-1">1999 • U/A</p>
+          <p class="text-sm">An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- Trending Now -->
+  <section class="mb-8">
+    <div class="bg-black text-white py-8 px-4">
+      <div class="max-w-7xl mb-8">
+        <h2 class="text-2xl font-bold">Trending Now</h2>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        <!-- Leo -->
+        <div class="relative group cursor-pointer">
+          <img
+            src="https://images.ottplay.com/images/vijay-in-leo-806.jpg"
+            class="w-full object-cover rounded-lg h-40 transition-transform duration-300 group-hover:scale-105"
+            alt=" Poster" />
+          <div
+            class="absolute top-0 left-0 w-full bg-gray-900 text-white p-4 rounded-lg scale-95 group-hover:scale-105 opacity-0 group-hover:opacity-100 z-10 transition-opacity duration-300">
+            <img
+              src="https://images.ottplay.com/images/vijay-in-leo-806.jpg"
+              class="rounded w-full h-40 mb-2 object-cover" alt=" Poster" />
+            <h3 class="text-lg font-bold">Leo</h3>
+            <p class="text-green-400 text-sm mb-2">#2 Trending in India</p>
+            <button class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-50 font-semibold">▶ Add to
+              Watchlist</button>
+                                       <button class="bg-white text-black px-4 py-2 rounded-lg text-sm ml-1 mb-2 w-50 font-semibold">Watch Now</button>
+
+            <p class="text-sm text-gray-300 mb-1">2024 • U/A</p>
+            <p class="text-sm">Parthiban is a mild-mannered cafe owner who fends off a gang of murderous thugs and gains attention from a drug cartel claiming he was once a part of them.</p>
+          </div>
+        </div>
+
+        <!-- Tourist Family -->
+        <div class="relative group cursor-pointer">
+          <img
+            src="https://img.nowrunning.com/content/movie/2025/touri-30296/bg_tourist-family.jpg"
+            class="w-full object-cover rounded-lg h-40 transition-transform duration-300 group-hover:scale-105"
+            alt="Tourist Family Poster" />
+          <div
+            class="absolute top-0 left-0 w-full bg-gray-900 text-white p-4 rounded-lg scale-95 group-hover:scale-105 opacity-0 group-hover:opacity-100 z-10 transition-opacity duration-300">
+            <img
+              src="https://img.nowrunning.com/content/movie/2025/touri-30296/bg_tourist-family.jpg"
+              class="rounded w-full h-40 mb-2 object-cover" alt="Tourist Poster" />
+            <h3 class="text-lg font-bold">Tourist Family</h3>
+            <p class="text-green-400 text-sm mb-2">#3 Trending in India</p>
+            <button class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-50 font-semibold">▶ Add to
+              Watchlist</button>
+                                       <button class="bg-white text-black px-4 py-2 rounded-lg text-sm ml-1 mb-2 w-50 font-semibold">Watch Now</button>
+
+            <p class="text-sm text-gray-300 mb-1">2025 • U/A</p>
+            <p class="text-sm">A quirky Sri Lankan family seeking a fresh start in India transforms a disconnected neighborhood into a vibrant community with their infectious love and kindness.</p>
+          </div>
+        </div>
+
+        <!-- 50 shades -->
+        <div class="relative group cursor-pointer">
+          <img
+            src="https://wallpapers.com/images/hd/fifty-shades-of-grey-7v8yhfzwlg8u5rfc.jpg"
+            class="w-full object-cover rounded-lg h-40 transition-transform duration-300 group-hover:scale-105"
+            alt=" Poster" />
+          <div
+            class="absolute top-0 left-0 w-full bg-gray-900 text-white p-4 rounded-lg scale-95 group-hover:scale-105 opacity-0 group-hover:opacity-100 z-10 transition-opacity duration-300">
+            <img
+              src="https://wallpapers.com/images/hd/fifty-shades-of-grey-7v8yhfzwlg8u5rfc.jpg"
+              class="rounded w-full h-40 mb-2 object-cover" alt="50shades Poster" />
+            <h3 class="text-lg font-bold">50 Shades Of Grey</h3>
+            <p class="text-green-400 text-sm mb-2">#5 Worldwide</p>
+            <button class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-50 font-semibold">▶ Add to
+              Watchlist</button>
+                                       <button class="bg-white text-black px-4 py-2 rounded-lg text-sm ml-1 mb-2 w-50 font-semibold">Watch Now</button>
+
+            <p class="text-sm text-gray-300 mb-1">2015 • A</p>
+            <p class="text-sm">Literature student Anastasia Steele's life changes forever when she meets handsome, yet tormented, billionaire Christian Grey.</p>
+          </div>
+        </div>
+
+        <!-- Vazha -->
+        <div class="relative group cursor-pointer">
+          <img
+            src="https://i.redd.it/wgsajydj1r3d1.jpeg"
+            class="w-full object-cover rounded-lg h-40 transition-transform duration-300 group-hover:scale-105"
+            alt=" Poster" />
+          <div
+            class="absolute top-0 left-0 w-full bg-gray-900 text-white p-4 rounded-lg scale-95 group-hover:scale-105 opacity-0 group-hover:opacity-100 z-10 transition-opacity duration-300">
+            <img
+              src="https://i.redd.it/wgsajydj1r3d1.jpeg"
+              class="rounded w-full h-40 mb-2 object-cover" alt=" Poster" />
+            <h3 class="text-lg font-bold">Vazha</h3>
+            <p class="text-green-400 text-sm mb-2">#7 Trending in India</p>
+            <button class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-50 font-semibold">▶ Add to
+              Watchlist</button>
+                                       <button class="bg-white text-black px-4 py-2 rounded-lg text-sm ml-1 mb-2 w-50 font-semibold">Watch Now</button>
+
+            <p class="text-sm text-gray-300 mb-1">2024 • U/A</p>
+            <p class="text-sm">Four friends deemed 'losers' face immense pressure from parents and society upon entering adulthood. Their emotional tale sees them embark on a journey of self-discovery and acceptance, where love ultimately triumphs over judgment.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- New Releases -->
+  <section class="mb-60">
+    <div class="bg-black text-white py-8 px-4">
+      <div class="max-w-7xl mb-8">
+        <h2 class="text-2xl font-bold">New Releases</h2>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        <!-- Bha bha bha -->
+        <div class="relative group cursor-pointer">
+          <img src="https://images.ottplay.com/images/bha-bha-ba-poster-29.jpg?impolicy=ottplay-20210210&width=1200&height=675"
+            class="w-full object-cover rounded-lg h-40 transition-transform duration-300 group-hover:scale-105"
+            alt="bahbaha" />
+          <div
+            class="absolute top-0 left-0 w-full bg-gray-900 text-white p-4 rounded-lg scale-95 group-hover:scale-105 opacity-0 group-hover:opacity-100 z-10 transition-opacity duration-300">
+            <img src="https://images.ottplay.com/images/bha-bha-ba-poster-29.jpg?impolicy=ottplay-20210210&width=1200&height=675"
+              class="rounded w-full h-40 mb-2 object-cover" alt=" Poster" />
+            <h3 class="text-lg font-bold">Bha Bha Bha</h3>
+            <p class="text-green-400 text-sm mb-2">#Trending Now</p>
+            <button class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-50 font-semibold">▶ Add to
+              Watchlist</button>
+                                       <button class="bg-white text-black px-4 py-2 rounded-lg text-sm ml-1 mb-2 w-50 font-semibold">Watch Now</button>
+
+            <p class="text-sm text-gray-300 mb-1">2025 • U/A </p>
+            <p class="text-sm">Bha. Bha. Ba. (short for Bhayam, Bhakthi, Bahumanam, transl. Fear, Devotion, Respect)[1] is an upcoming Indian Malayalam-language action thriller film directed by Dhananjay Shankar in his directorial debut, written by Fahim Safar and Noorin Shereef, and produced by Gokulam Gopalan for Sree Gokulam Movies</p>
+          </div>
+        </div>
+
+        <!-- Su From So -->
+        <div class="relative group cursor-pointer">
+          <img
+            src="https://assetscdn1.paytm.com/images/cinema/Su-From-So-%20(1)-6bfd68a0-712a-11f0-9340-9da802f97dac.jpg?format=webp&imwidth=256"
+            class="w-full object-cover rounded-lg h-40 transition-transform duration-300 group-hover:scale-105"
+            alt=" Poster" />
+          <div
+            class="absolute top-0 left-0 w-full bg-gray-900 text-white p-4 rounded-lg scale-95 group-hover:scale-105 opacity-0 group-hover:opacity-100 z-10 transition-opacity duration-300">
+            <img
+              src="https://assetscdn1.paytm.com/images/cinema/Su-From-So-%20(1)-6bfd68a0-712a-11f0-9340-9da802f97dac.jpg?format=webp&imwidth=256"
+              class="rounded w-full h-40 mb-2 object-cover" alt=" Poster" />
+            <h3 class="text-lg font-bold">Su From So</h3>
+            <p class="text-green-400 text-sm mb-2">#Trending Now</p>
+            <button class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-50 font-semibold">▶ Add to
+              Watchlist</button>
+                                       <button class="bg-white text-black px-4 py-2 rounded-lg text-sm ml-1 mb-2 w-50 font-semibold">Watch Now</button>
+
+            <p class="text-sm text-gray-300 mb-1">2025 • U/A</p>
+            <p class="text-sm">In a quiet village, a boy's innocent crush unleashes strange events that have everyone convinced he's brought a ghost along with his feelings</p>
+          </div>
+        </div>
+        <!-- Coolie -->
+        <div class="relative group cursor-pointer">
+          <img src="https://moviesphd.com/wp-content/uploads/2025/05/Rajinikanths-%E2%80%98Coolie-Release.webp"
+            class="w-full object-cover rounded-lg h-40 transition-transform duration-300 group-hover:scale-105"
+            alt=" Poster" />
+          <div
+            class="absolute top-0 left-0 w-full bg-gray-900 text-white p-4 rounded-lg scale-95 group-hover:scale-105 opacity-0 group-hover:opacity-100 z-10 transition-opacity duration-300">
+            <img src="https://moviesphd.com/wp-content/uploads/2025/05/Rajinikanths-%E2%80%98Coolie-Release.webp"
+              class="rounded w-full h-40 mb-2 object-cover" alt=" Poster" />
+            <h3 class="text-lg font-bold">Coolie</h3>
+            <p class="text-green-400 text-sm mb-2">#Trending Now</p>
+            <button class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-50 font-semibold">▶ Add to
+              Watchlist</button>
+                                       <button class="bg-white text-black px-4 py-2 rounded-lg text-sm ml-1 mb-2 w-50 font-semibold">Watch Now</button>
+
+            <p class="text-sm text-gray-300 mb-1">2025 • A</p>
+            <p class="text-sm">Delves into a man's relentless quest for vengeance since youth, driven by righting past wrongs, shaping his very existence. Viewers experience the complexities of his tumultuous vendetta journey.</p>
+          </div>
+        </div>
+
+        <!-- Avatar -->
+        <div class="relative group cursor-pointer">
+          <img
+            src="http://us.autodailyz.com/wp-content/uploads/2025/03/hq720-1.jpg"
+            class="w-full object-cover rounded-lg h-40 transition-transform duration-300 group-hover:scale-105"
+            alt=" Poster" />
+          <div
+            class="absolute top-0 left-0 w-full bg-gray-900 text-white p-4 rounded-lg scale-95 group-hover:scale-105 opacity-0 group-hover:opacity-100 z-10 transition-opacity duration-300">
+            <img
+              src="http://us.autodailyz.com/wp-content/uploads/2025/03/hq720-1.jpg"
+              class="rounded w-full h-40 mb-2 object-cover" alt=" Poster" />
+            <h3 class="text-lg font-bold">Avatar: Fire and Ash</h3>
+            <p class="text-green-400 text-sm mb-2">#Trending Now</p>
+            <button class="bg-white text-black px-4 py-2 rounded-lg text-sm mb-2 w-50 font-semibold">▶ Add to
+              Watchlist</button>
+                                       <button class="bg-white text-black px-4 py-2 rounded-lg text-sm ml-1 mb-2 w-50 font-semibold">Watch Now</button>
+
+            <p class="text-sm text-gray-300 mb-1">2025 • A</p>
+            <p class="text-sm">Jake and Neytiri's family grapples with grief after Neteyam's death, encountering a new, aggressive Na'vi tribe, the Ash People, who are led by the fiery Varang, as the conflict on Pandora escalates and a new moral focus emerges.</p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- See more -->
+   <section class="flex justify-center mb-5  ">
+    <button class="bg-white text-center text-black place-items-center px-10  py-2 rounded-lg text-sm mb-2 w-50 font-semibold hover:bg-blue-500 hover:text-white">See More</button>
+   </section>
+  <!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 py-8 px-6 h-80 flex flex-col">
+  <div class="container mx-auto flex flex-col h-full px-6 md:px-0">
+
+    <div class="mt-auto flex flex-col md:flex-row justify-between gap-12 text-center md:text-left">
+      <!-- About Us -->
+      <div class="md:w-1/4">
+        <h3 class="text-lg font-semibold text-white mb-2">About Us</h3>
+        <div class="w-14 h-1 bg-white mb-4 mx-auto md:mx-0"></div>
+        <p class="text-sm text-justify">
+          TailFlicks is your go-to hub for discovering the latest and greatest movies. Stay updated with trending
+          films and upcoming blockbusters!
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="md:w-1/4">
+        <h3 class="text-lg font-semibold text-white mb-2">Quick Links</h3>
+        <div class="w-14 h-1 bg-white mb-4 mx-auto md:mx-0"></div>
+         <ul class="text-sm space-y-1">
+          <li><a href="index.html" class="hover:underline">Home</a></li>
+          <li><a href="Movies.html" class="hover:underline">Movies</a></li>
+          <li><a href="tvshows.html" class="hover:underline">TV Shows</a></li>
+          <li><a href="watchlist.html" class="hover:underline">Watchlist</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Us -->
+      <div class="md:w-1/4">
+        <h3 class="text-lg font-semibold text-white mb-2">Contact Us</h3>
+        <div class="w-14 h-1 bg-white mb-4 mx-auto md:mx-0"></div>
+        <p class="text-sm">Email: explorer@gmail.com</p>
+        <p class="text-sm">Phone: +91 98765 40000</p>
+        <div class="flex flex-row justify-between my-6">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="md:w-1/4">
+        <h3 class="text-lg font-semibold text-white mb-2">Newsletter</h3>
+        <div class="w-14 h-1 bg-white mb-4 mx-auto md:mx-0"></div>
+        <p class="text-sm mb-2">Get the latest movie updates in your inbox.</p>
+        <input type="email" placeholder="Your email" class="w-full p-2 rounded bg-gray-800 text-white mb-2">
+        <button class="w-full bg-blue-500 hover:bg-red-600 text-white py-2 rounded">
+          Subscribe
+        </button>
+      </div>
+    </div>
+
+    <!-- Bottom Line -->
+    <div class="text-center text-sm text-gray-500 mt-8 border-t border-gray-700 pt-4">
+      © 2025 Movie Explorer | Designed using Tailwind CSS !!
+    </div>
+  </div>
+</footer>
+
+
+</body>
+
+</html>
